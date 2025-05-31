@@ -57,6 +57,7 @@ nav {
 .nav-links {
     display: flex;
     gap: 2rem;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
 .nav-links a {
@@ -84,6 +85,11 @@ nav {
 
 .nav-links a:hover::after {
     width: 100%;
+}
+
+.nav-links.active {
+    transform: translateX(0);
+    opacity: 1;
 }
 
 .menu-btn {
